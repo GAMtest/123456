@@ -1,7 +1,4 @@
-all: fake
-
-fake: main.c
-	sudo shutdown -h now
+all: main
 
 main: main.c
 	@rm -rf Main.class
