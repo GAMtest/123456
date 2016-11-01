@@ -1,8 +1,8 @@
 all: main
 
-main: Main.java
-	@rm -rf Main.class
-	@javac Main.java
+main: main.c
+	@rm -rf main.o
+	@gcc main.c - main.o
 
-run: Main.class
-	@java Main
+run: main.o
+	@./main.o
