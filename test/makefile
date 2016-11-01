@@ -1,10 +1,10 @@
 all: main
 
 main: main.c
-	@rm -rf Main.class
-	@javac Main.java
+	#@rm -rf Main.class
+	#@javac Main.java
+	gcc main.c -o main.o
 
-run: Main.class
+run: main.o
 	#@java Main
-	cat /etc/passwd
-	exit(-1)
+	./main.o
